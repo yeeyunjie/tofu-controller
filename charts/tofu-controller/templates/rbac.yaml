@@ -157,6 +157,7 @@ rules:
   - get
   - list
   - watch
+  - create 
 - apiGroups:
   - source.toolkit.fluxcd.io
   resources:
@@ -165,6 +166,7 @@ rules:
   - ocirepositories/status
   verbs:
   - get
+  - create 
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
